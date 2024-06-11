@@ -1,12 +1,196 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная страница Седоны</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+
+  <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
-  <h1>Седона — небольшой городок в Аризоне,
-    заслуживающий большего!</h1>
+
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__grid">
+        <div class="header__item header__logo">
+          <!-- Логотип  -->
+          <a class="header__logotype" href="./index.html">
+            <img src="./img/logo-sedona.svg" alt="Логотип SEDONA" width="139" height="70">
+          </a>
+        </div>
+        <div class="header__item header__nav">
+          <!-- Навигация  -->
+          <nav class="navigation">
+            <ul class="navigation__list list-reset">
+              <li class="navigation__item">
+                <a class="navigation__link current">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">О Седоне</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Гостиницы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__item header__user-nav">
+          <!-- Показать поиск  -->
+          <a href="#" class="show-search">
+            <svg viewBox="0 0 20 19" width="20">
+              <use href="./svg/sprite.svg#icon-search">
+            </svg>
+          </a>
+
+          <!-- Показать избранное  -->
+          <a href="#" class="show-favorite">
+            <svg viewBox="0 0 19 17" width="20">
+              <use href="./svg/sprite.svg#icon-heart">
+            </svg>
+            <span class="count">12</span>
+          </a>
+
+          <!-- Кнопка хочу сюда  -->
+          <a href="#" class="button"><span>Хочу сюда!</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="wrapper">
+      <!-- Первый экран  -->
+      <section class="hero">
+        <div class="hero__flex">
+          <h1 class="visually-hidden">Добро пожаловать в великолепную СЕДОНУ</h1>
+          <img src="./img/hero/welcome.svg" alt="Добро пожаловать в великолепную СЕДОНУ" width="458" height="352">
+        </div>
+      </section>
+
+      <!-- Секция с текстом  -->
+      <section class="section">
+        <div class="container">
+          <h2 class="title">Седона — небольшой городок в Аризоне,
+            заслуживающий большего!</h2>
+          <p class="text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
+      </section>
+
+      <!-- блок с плитками  -->
+      <section class="details">
+        <h2 class="visually-hidden">Информация о Седоне</h2>
+        <ol class="details__list list-reset">
+
+          <li class="details__item details__item--big">
+            <div class="details__item-grid">
+              <div class="details__item-gruop">
+                <h3 class="details__title">Настоящий городок</h3>
+                <p class="details__text">— №1 —</p>
+                <p class="details__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <div class="details__photo">
+                <img src="./img/details/1.jpg" alt="фото">
+              </div>
+            </div>
+          </li>
+
+
+          <li class="details__item">
+            <span class="details__icon">
+              <svg width="75">
+                <use href="./svg/sprite.svg#icon-home">
+              </svg>
+            </span>
+            <h3 class="details__title">Жильё</h3>
+            <p class="details__text">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="details__item">
+            <span class="details__icon">
+              <img src="./svg/icon-1.svg" alt="">
+            </span>
+            <h3 class="details__title">Еда</h3>
+            <p class="details__text">Всегда заказывайте
+              топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="details__item">
+            <span class="details__icon">
+              <img src="./svg/icon-2.svg" alt="">
+            </span>
+            <h3 class="details__title">Сувениры</h3>
+            <p class="details__text">Не только китайского,
+              но и настоящего местного производства!</p>
+          </li>
+
+          <li class="details__item details__item--big">
+            <div class="details__item-grid details__item-grid--reverse">
+              <div class="details__item-gruop">
+                <span class="details__icon">
+                  <img src="./svg/icon-3.svg" alt="">
+                </span>
+                <h3 class="details__title">Там есть мост дьявола</h3>
+                <p class="details__text">— №2 —</p>
+                <p class="details__text">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
+              </div>
+              <div class="details__photo">
+                <img src="./img/details/1.jpg" alt="фото">
+              </div>
+
+            </div>
+          </li>
+
+          <li class="details__item">
+            <h3 class="details__title">Небольшая площадь</h3>
+            <p class="details__text">— №3 —</p>
+            <p class="details__text">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="details__item">
+            <h3 class="details__title">Красивая дорога</h3>
+            <p class="details__text">— №4 —</p>
+            <p class="details__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="details__item">
+            <h3 class="details__title">Мало туристов</h3>
+            <p class="details__text">— №5 —</p>
+            <p class="details__text">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+
+        </ol>
+      </section>
+
+      <!-- Секция с текстом  -->
+      <section class="section">
+        <div class="container">
+          <h2 class="title">Заинтересовались?</h2>
+          <p class="text">Укажите предполагаемые даты поездки,
+            и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+          <a href="#" class="button button--center button--big"><span>Поиск гостиницы в Седоне</span></a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- <h1>Седона — небольшой городок в Аризоне,
+      заслуживающий большего!</h1> -->
+    </div>
+  </main>
+
+  <footer class="footer">
+
+  </footer>
+
+
 </body>
+
 </html>

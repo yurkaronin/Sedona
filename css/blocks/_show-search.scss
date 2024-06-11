@@ -1,0 +1,47 @@
+.show-search {
+  display: flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.show-favorite {
+  display: flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  .count {
+    position: absolute;
+    top: 3px;
+    right: -3px;
+    z-index: 2;
+  }
+}
+
+.count {
+  border-radius: 50%;
+  background-color: var(--special-neutral-light);
+  color: var(--basic-white);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: -0.1em;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

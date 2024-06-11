@@ -8,17 +8,16 @@
 // blocks
 @import "./blocks/button";
 @import "./blocks/title";
+@import "./blocks/text";
 @import "./blocks/wrapper";
+@import "./blocks/container";
+@import "./blocks/navigation";
+@import "./blocks/show-search";
 
 // sections
 @import "./sections/header";
 
+@import "./sections/hero";
 @import "./sections/section";
 
 @import "./sections/footer";
-
-// activity
-@import "./activity/header-sticky";
-
-// effects
-@import "./effects/click";

@@ -1,0 +1,36 @@
+.navigation {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__link {
+    display: flex;
+    max-width: max-content;
+    padding: 18px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    position: relative;
+    margin-right: 34px;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--special-warm-light);
+    }
+
+    &.current {
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: var(--special-warm-light);
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+      }
+    }
+  }
+}

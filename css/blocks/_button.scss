@@ -8,20 +8,20 @@
   align-items: center;
   max-width: max-content;
   background-color: transparent;
-  padding: 8px 34px;
-  height: 37px;
+  padding: 9px 34px 8px;
+  height: 39px;
   font-style: normal;
   text-align: center;
+  vertical-align: middle;
   border: 1px solid transparent;
   transition: all 0.3s;
-  border-radius: 0;
   box-shadow: none;
   border-radius: 4px;
 
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 16px;
-  line-height: 125%;
+  line-height: 1;
   text-transform: uppercase;
   color: var(--basic-white);
 
@@ -52,6 +52,15 @@
 
   * {
     flex-shrink: 0;
+  }
+
+  &--center {
+    margin: 0 auto;
+  }
+  &--big {
+    height: 62px;
+    max-width: 575px;
+    width: 100%;
   }
 
   @media (hover: hover) {
