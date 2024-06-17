@@ -17,6 +17,7 @@
   --special-neutral-dark: #6c9e42;
   --special-warm-dark: #615048;
   --special-warm-light: #756257;
+  --icon: #81B3D2;
 }
 
 /* pt-sans-regular - cyrillic_latin */
@@ -236,18 +237,25 @@ html *::after {
 
 body {
   margin: 0;
-  min-width: 1200px;
   position: relative;
   background-color: var(--basic-light);
   font-style: normal;
-  max-width: 100%;
-  width: 100%;
   font-family: var(--font-family);
   font-weight: 400;
-  margin-inline: 40px;
   font-size: 22px;
   line-height: 118%;
   color: var(--basic-dark);
+  max-width: 1280px;
+  min-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.body__container {
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  background: var(--basic-white);
+  margin-inline: 40px;
 }
 
 img {
@@ -557,13 +565,6 @@ input[type=radio].visually-hidden {
   margin: 0;
 }
 
-.wrapper {
-  max-width: 1200px;
-  width: 100%;
-  margin-inline: auto;
-  background-color: var(--basic-white);
-}
-
 .container {
   max-width: 720px;
   margin: 0 auto;
@@ -723,11 +724,12 @@ input[type=radio].visually-hidden {
   display: block;
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   right: 0;
   height: 57px;
   background-image: url(../img/hero/decorate-footer.svg);
+  background-size: cover;
 }
 .hero__flex {
   display: -webkit-box;
@@ -751,4 +753,130 @@ input[type=radio].visually-hidden {
 }
 .section .button {
   margin-top: 56px;
+}
+
+.details__list {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(3, 1fr);
+}
+.details__item {
+  padding-top: 90px;
+  padding-bottom: 80px;
+  padding-inline: 75px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--basic-white);
+}
+.details__item--mod {
+  background-color: var(--special-cold-light12);
+}
+.details__item--mod-2 {
+  background-color: var(--special-cold-light20);
+}
+.details__icon {
+  width: 75px;
+  height: 76px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 23px;
+  color: var(--icon);
+}
+.details__icon svg {
+  display: block;
+  margin-top: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.details__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 117%;
+  text-transform: uppercase;
+  text-align: center;
+}
+.details__number {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 117%;
+  text-transform: uppercase;
+  text-align: center;
+}
+.details__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 117%;
+  text-align: center;
+}
+.details__item--big {
+  grid-column: span 3;
+  background-color: var(--special-cold-light);
+  color: var(--basic-white);
+  padding: 0;
+  display: block;
+}
+.details__item-grid {
+  display: grid;
+  gap: 0;
+  grid-template-columns: 1fr 2fr;
+}
+.details__item--big-reverse .details__item-grid {
+  grid-template-columns: 2fr 1fr;
+}
+.details__item--big-reverse .details__photo {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+.details__item-gruop {
+  padding-top: 90px;
+  padding-bottom: 80px;
+  padding-inline: 75px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.details__photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */

@@ -12,11 +12,12 @@
     display: block;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     right: 0;
     height: 57px;
     background-image: url(../img/hero/decorate-footer.svg);
+    background-size: cover;
   }
   &__flex {
     display: flex;

@@ -12,19 +12,27 @@ html *::after {
 
 body {
   margin: 0;
-  min-width: 1200px;
   position: relative;
   background-color: var(--basic-light);
   font-style: normal;
-  max-width: 100%;
-  width: 100%;
   font-family: var(--font-family);
   font-weight: 400;
-  margin-inline: 40px;
 
   font-size: 22px;
   line-height: 118%;
   color: var(--basic-dark);
+  max-width: calc(1200px + 80px);
+  min-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.body {
+  &__container {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    background: var(--basic-white);
+    margin-inline: 40px;
+  }
 }
 
 img {

@@ -18,7 +18,8 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
+<body class="body">
+  <div class="body__container">
 
   <header class="header">
     <div class="wrapper">
@@ -95,8 +96,8 @@
           <li class="details__item details__item--big">
             <div class="details__item-grid">
               <div class="details__item-gruop">
-                <h3 class="details__title">Настоящий городок</h3>
-                <p class="details__text">— №1 —</p>
+                <h3 class="details__title">Настоящий<br>городок</h3>
+                <p class="details__number">— №1 —</p>
                 <p class="details__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <div class="details__photo">
@@ -106,62 +107,64 @@
           </li>
 
 
-          <li class="details__item">
+          <li class="details__item details__item--mod">
             <span class="details__icon">
-              <svg width="75">
+              <svg width="75" height="72">
                 <use href="./svg/sprite.svg#icon-home">
               </svg>
             </span>
             <h3 class="details__title">Жильё</h3>
-            <p class="details__text">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
+            <p class="details__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="details__item">
             <span class="details__icon">
-              <img src="./svg/icon-1.svg" alt="">
+              <svg width="74" height="70">
+                <use href="./svg/sprite.svg#icon-burger">
+              </svg>
             </span>
             <h3 class="details__title">Еда</h3>
             <p class="details__text">Всегда заказывайте
               топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="details__item">
+          <li class="details__item details__item--mod">
             <span class="details__icon">
-              <img src="./svg/icon-2.svg" alt="">
+              <svg width="64" height="76" >
+                <use href="./svg/sprite.svg#icon-gift">
+              </svg>
             </span>
             <h3 class="details__title">Сувениры</h3>
             <p class="details__text">Не только китайского,
               но и настоящего местного производства!</p>
           </li>
 
-          <li class="details__item details__item--big">
+          <li class="details__item details__item--big details__item--big-reverse">
             <div class="details__item-grid details__item-grid--reverse">
               <div class="details__item-gruop">
-                <span class="details__icon">
-                  <img src="./svg/icon-3.svg" alt="">
-                </span>
-                <h3 class="details__title">Там есть мост дьявола</h3>
-                <p class="details__text">— №2 —</p>
-                <p class="details__text">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
+
+                <h3 class="details__title">Там есть<br>мост дьявола</h3>
+                <p class="details__number">— №2 —</p>
+                <p class="details__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </div>
               <div class="details__photo">
-                <img src="./img/details/1.jpg" alt="фото">
+                <img src="./img/details/2.jpg" alt="фото">
               </div>
 
             </div>
           </li>
 
-          <li class="details__item">
-            <h3 class="details__title">Небольшая площадь</h3>
-            <p class="details__text">— №3 —</p>
+          <li class="details__item details__item--mod">
+            <h3 class="details__title">Небольшая<br>площадь</h3>
+            <p class="details__number">— №3 —</p>
             <p class="details__text">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="details__item">
-            <h3 class="details__title">Красивая дорога</h3>
-            <p class="details__text">— №4 —</p>
+          <li class="details__item details__item--mod-2">
+            <h3 class="details__title">Красивая<br>дорога</h3>
+            <p class="details__number">— №4 —</p>
             <p class="details__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="details__item">
-            <h3 class="details__title">Мало туристов</h3>
-            <p class="details__text">— №5 —</p>
+          <li class="details__item details__item--mod">
+            <h3 class="details__title">Мало<br>туристов</h3>
+            <p class="details__number">— №5 —</p>
             <p class="details__text">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
 
@@ -189,6 +192,7 @@
   <footer class="footer">
 
   </footer>
+</div>
 
 
 </body>
