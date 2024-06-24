@@ -1,0 +1,30 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  &__grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+  }
+  &__tel {
+    text-decoration: none;
+    text-align: center;
+    max-width: max-content;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    display: block;
+  }
+  &__developers {
+    display: block;
+    text-decoration: none;
+    max-width: 115px;
+    width: 100%;
+  }
+}

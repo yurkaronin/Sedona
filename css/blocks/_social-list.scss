@@ -1,0 +1,10 @@
+.social-list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 30px;
+  align-items: flex-start;
+  a {
+    display: flex;
+    max-width: max-content;
+  }
+}
