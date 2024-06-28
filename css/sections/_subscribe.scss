@@ -1,11 +1,11 @@
 .subscribe {
-  background-color: red;
   background-image: url(../img/subscribe/bg.jpg);
   color: var(--basic-white);
   padding-top: 90px;
   padding-bottom: 95px;
   background-repeat: no-repeat;
   background-size: cover;
+
   &__text {
     text-align: center;
   }
@@ -16,5 +16,16 @@
   }
   .title {
     color: inherit;
+  }
+
+  // МОДИФИКАТОР
+  &--mod {
+    background-image: none;
+  }
+  &--mod .title {
+    color: var(--basic-black);
+  }
+  &--mod .subscribe__text {
+    color: var(--basic-black);
   }
 }

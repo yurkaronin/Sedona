@@ -602,6 +602,10 @@ input[type=radio].visually-hidden {
   max-width: max-content;
 }
 
+.switch-view {
+  cursor: pointer;
+}
+
 .header {
   padding: 0;
 }
@@ -809,7 +813,6 @@ input[type=radio].visually-hidden {
 }
 
 .subscribe {
-  background-color: red;
   background-image: url(../img/subscribe/bg.jpg);
   color: var(--basic-white);
   padding-top: 90px;
@@ -827,6 +830,15 @@ input[type=radio].visually-hidden {
 }
 .subscribe .title {
   color: inherit;
+}
+.subscribe--mod {
+  background-image: none;
+}
+.subscribe--mod .title {
+  color: var(--basic-black);
+}
+.subscribe--mod .subscribe__text {
+  color: var(--basic-black);
 }
 
 .catalog__header {
