@@ -1,0 +1,19 @@
+.catalog {
+  &__header {
+    background-color: #464141;
+    color: var(--basic-white);
+    background-image: url(../img/catalog/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 35px;
+    padding-bottom: 65px;
+  }
+  &__title {
+    color: inherit;
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: inherit;
+    text-align: inherit;
+    margin-bottom: 5px;
+  }
+}

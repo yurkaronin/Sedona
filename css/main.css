@@ -829,6 +829,24 @@ input[type=radio].visually-hidden {
   color: inherit;
 }
 
+.catalog__header {
+  background-color: #464141;
+  color: var(--basic-white);
+  background-image: url(../img/catalog/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 35px;
+  padding-bottom: 65px;
+}
+.catalog__title {
+  color: inherit;
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: inherit;
+  text-align: inherit;
+  margin-bottom: 5px;
+}
+
 .footer {
   padding-top: 40px;
   padding-bottom: 30px;
