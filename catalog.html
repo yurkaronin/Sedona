@@ -72,7 +72,7 @@
     <main class="main">
 
       <article class="catalog">
-
+        <!-- Первый экран -->
         <div class="catalog__header">
           <div class="wrapper">
             <h1 class="catalog__title title">Гостиницы Седоны</h1>
@@ -99,7 +99,7 @@
                 <a class="breadcrumbs__link">Гостиницы</a>
               </li>
             </ul>
-
+            <!-- Фильтрация товаров  -->
             <div class="catalog-filter">
 
               <fieldset class="catalog-filter__group">
@@ -140,8 +140,166 @@
 
 
             </div>
+
           </div>
         </div>
+
+        <div class="catalog__order">
+          <h2 class="title">Найдено гостиниц: <output name="number-of-products">38</output></h2>
+
+          <!-- выпадающий список опций сортировки  -->
+          <form class="catalog__sorting-type">
+            <label class="visually-hidden" for="sorting">Сортировка</label>
+            <select class="select-control" id="sorting" name="sorting">
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="popular">Сначала популярное</option>
+              <option value="expensive">Сначала дорогое</option>
+            </select>
+            <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
+          </form>
+
+
+          <a class="switch-view" href="#">
+            <span class="visually-hidden">Показать карточки</span>
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_24196_296)">
+              <path d="M4 0H0V6H4V0Z" fill="black"/>
+              <path d="M16 0H12V6H16V0Z" fill="black"/>
+              <path d="M10 0H6V6H10V0Z" fill="black"/>
+              <path d="M4 8H0V14H4V8Z" fill="black"/>
+              <path d="M16 8H12V14H16V8Z" fill="black"/>
+              <path d="M10 8H6V14H10V8Z" fill="black"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_24196_296">
+              <rect width="16" height="14" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+
+          </a>
+
+          <a href="#" class="switch-view">
+            <span class="visually-hidden">Показать блоки</span>
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_24196_293)">
+              <path d="M16 12H0V14H16V12Z" fill="black"/>
+              <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_24196_293">
+              <rect width="16" height="14" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+
+          </a>
+
+          <a href="#" class="switch-view">
+            <span class="visually-hidden">Показать список</span>
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_24196_306)">
+              <path d="M2 0H0V2H2V0Z" fill="black"/>
+              <path d="M16 0H4V2H16V0Z" fill="black"/>
+              <path d="M2 4H0V6H2V4Z" fill="black"/>
+              <path d="M16 4H4V6H16V4Z" fill="black"/>
+              <path d="M2 8H0V10H2V8Z" fill="black"/>
+              <path d="M16 8H4V10H16V8Z" fill="black"/>
+              <path d="M2 12H0V14H2V12Z" fill="black"/>
+              <path d="M16 12H4V14H16V12Z" fill="black"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_24196_306">
+              <rect width="16" height="14" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+
+          </a>
+
+        </div>
+        <div class="catalog-collection">
+          <ul class="catalog-collection__list list-reset">
+            <!-- карточка гостиницы  -->
+            <li class="catalog-collection__item catalog-card">
+              <!-- фото гостиницы  -->
+              <img class="catalog-card__photo" src="./img/catalog-card/1.jpg" alt="фото гостиницы" loading="lazy" width="300" height="206">
+              <!-- название гостиницы  -->
+              <h3 class="catalog-card__name">Amara Resort & Spa</h3>
+              <!-- детальная информация  -->
+              <table class="catalog-card__details">
+                <tr>
+                  <th>Гостиница</th>
+                  <td>От 4000 ₽</td>
+                </tr>
+              </table>
+              <!-- кнопки управления  -->
+              <div class="catalog-card__container">
+                <a class="button"href="#">подробнее</a>
+                <a class="button"href="#">В избранное</a>
+              </div>
+              <div class="catalog-card__container">
+                <!-- уровень гостиницы  -->
+               <ul class="catalog-card__level stars-level">
+                <li class="stars-level__item">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_123751_102)">
+                    <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_123751_102">
+                    <rect width="18" height="17" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </li>
+                <li class="stars-level__item">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_123751_102)">
+                    <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_123751_102">
+                    <rect width="18" height="17" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </li>
+                <li class="stars-level__item">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_123751_102)">
+                    <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_123751_102">
+                    <rect width="18" height="17" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </li>
+                <li class="stars-level__item">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_123751_102)">
+                    <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_123751_102">
+                    <rect width="18" height="17" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </li>
+               </ul>
+              <!-- рейтинг гостиницы  -->
+              <div class="catalog-card__rating">
+                <span class="catalog-card__rating-label">Рейтинг: 8,5</span>
+              </div>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+
 
       </article>
 
